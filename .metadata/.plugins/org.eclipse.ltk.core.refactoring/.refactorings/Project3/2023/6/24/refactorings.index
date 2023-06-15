@@ -1,0 +1,42 @@
+1686548067506	Rename resource 'user'
+1686548144525	Rename package 'com.sky.user.controller'
+1686548164205	Rename package 'com.sky.user.model'
+1686548170899	Rename package 'com.sky.user.service'
+1686548190754	Rename type 'UserService'
+1686548195813	Rename type 'UserServiceImpl'
+1686548212817	Rename compilation unit 'UserController.java'
+1686548255638	Rename type 'UserVO'
+1686548261715	Rename type 'UserDAO'
+1686548289489	Rename resource 'user_join.jsp'
+1686548297147	Rename resource 'user_login.jsp'
+1686548303111	Rename resource 'user_modify.jsp'
+1686548306092	Rename resource 'user_mypage.jsp'
+1686554484216	Rename resource 'member_delete_ok.jsp'
+1686554512717	Rename resource 'deleteOk.jsp'
+1686556706634	Delete element
+1686616712435	Copy file
+1686616714604	Copy file
+1686616719268	Copy file
+1686617250130	Delete element
+1686625733261	Rename type 'UserController'
+1686625822050	Delete element
+1686626499291	Move 'member_login.jsp' to 'webapp'
+1686626505154	Move 'member_login.jsp' to 'member'
+1686628103169	Delete elements
+1686628106086	Delete element
+1686632623846	Copy compilation unit
+1686632638370	Copy compilation unit
+1686632652547	Delete element
+1686633021524	Delete element
+1686635487976	Delete element
+1686635495351	Delete element
+1686638234955	Delete element
+1686638237362	Delete element
+1686638239730	Delete element
+1686638243049	Delete element
+1686653259729	Delete element
+1686702914812	Delete element
+1686706080767	Copy compilation unit
+1686706103285	Copy compilation units
+1686706111248	Copy compilation units
+1686706136815	Copy folder

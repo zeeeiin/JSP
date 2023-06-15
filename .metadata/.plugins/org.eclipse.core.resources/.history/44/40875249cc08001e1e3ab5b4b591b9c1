@@ -1,0 +1,28 @@
+package com.coding404.util;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+//1. Filter클래스를 상속받는다.
+//3. 
+
+public class FilterEx01 implements Filter  {
+
+
+	@Override
+	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
+			throws IOException, ServletException {
+		
+		//2. 다음 프로그램 코드로 연결( 필터 체인이 있다면 다음필터로 연결 )
+		chain.doFilter(request, response);
+		
+		
+	}
+	
+	
+}	

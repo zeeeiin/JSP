@@ -1,0 +1,6 @@
+package com.coding404.util;
+
+public class BoardAuthFilter implements Filter {
+
+	public void 
+}

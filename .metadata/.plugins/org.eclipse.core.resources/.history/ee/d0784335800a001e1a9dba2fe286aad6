@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ include file="../include/header.jsp" %>
+  <style>
+
+	table {
+	  border-collapse: separate;
+	  border-spacing: 10px; /* 간격 크기 조정 */
+	}
+	
+	td {
+	  padding: 10px; /* 간격 크기 조정 */
+	}
+	
+	<table cellpadding="10">
+ 	 <!-- 테이블 콘텐츠 -->
+	</table>
+		
+</style>  
+    
+<section>
+	
+	<div align="center"  margin-top: 10px;" >
+	<br><br>
+	
+		<h3 style="font-weight: bold; font-size: 20px;">skyblue in your eyes 로그인</h3><br><br>
+		
+		<form action="loginForm.member" method="post">
+		
+		<table>
+		<tr>
+			<td>
+			<input type="text" name="id" placeholder="아이디"></td>
+		</tr>
+		<tr>
+			<td>
+			<input type="password" name="pw" placeholder="비밀번호"></td><br><br><br>
+		</tr>	
+		</table>
+		
+			<input type="submit" value="로그인">
+			<input type="button" value="가입하기" onclick="location.href='member_join.member' " >			
+
+			
+		</form><br><br>
+		
+		<div>${msg }</div> <!-- 아이디 비밀번호를 확인하세요 문구 뜸. 스타일 바꿔야함-->
+		
+		
+	</div>
+	
+	
+</section>
+
+<%@ include file="../include/footer.jsp" %>

@@ -1,0 +1,5 @@
+package com.coding404.board.service;
+
+public class BoardServiceImpl implements BoardService {
+
+}

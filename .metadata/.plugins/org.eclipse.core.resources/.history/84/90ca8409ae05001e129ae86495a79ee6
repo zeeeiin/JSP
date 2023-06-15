@@ -1,0 +1,5 @@
+package com.coding404.user.service;
+
+public class UserServiceImpl {
+
+}

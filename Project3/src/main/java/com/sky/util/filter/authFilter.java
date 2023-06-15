@@ -1,0 +1,52 @@
+//package com.sky.util.filter;
+//
+//import java.io.IOException;
+//import java.io.PrintWriter;
+//
+//import javax.servlet.Filter;
+//import javax.servlet.FilterChain;
+//import javax.servlet.ServletException;
+//import javax.servlet.ServletRequest;
+//import javax.servlet.ServletResponse;
+//import javax.servlet.annotation.WebFilter;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
+//import javax.servlet.http.HttpSession;
+//
+//@WebFilter({"/member/member_mypage.member",
+//			"/member/member_modify.member"})// "/board/board_write.board","/board/registForm.board" 추가 
+//public class authFilter implements Filter {
+//
+//	@Override
+//	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+//			throws IOException, ServletException {
+//
+//		HttpServletRequest req = (HttpServletRequest)request;
+//		HttpServletResponse res = (HttpServletResponse)response;
+//
+//		//세션을 얻음
+//		HttpSession session = req.getSession();
+//
+//		//회원이 로그인 할 때 저장한 인증값
+//		String member_id = (String)session.getAttribute("id");
+//
+//		//로그인이 안 됨
+//		if(member_id == null) {
+//
+//			//절대경로
+//			String path = req.getContextPath() + "/member/member_login.member";
+//
+//			//res.sendRedirect(path);
+//			res.setContentType("text/html; charset=UTF-8;");
+//			PrintWriter out = res.getWriter();
+//			out.println("<script>");
+//			out.println("alert('로그인이 필요한 서비스입니다');");
+//			out.println("location.href='" + path + "';");
+//			out.println("</script>");
+//
+//			return;
+//
+//		}
+//
+//	}
+//}

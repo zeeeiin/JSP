@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="../include/header.jsp" %>
+    
+<meta charset="UTF-8">
+<title>skyblue in your eyes</title>
+
+<style>
+
+	table {
+	  border-collapse: separate;
+	  border-spacing: 10px; /* 간격 크기 조정 */
+	}
+	
+	td {
+	  padding: 10px; /* 간격 크기 조정 */
+	}
+	
+	<table cellpadding="10">
+ 	 <!-- 테이블 콘텐츠 -->
+	</table>
+		
+</style>
+
+<style>
+
+
+
+
+
+</style>
+
+
+<section  style="text-align: center; margin-top: 10px;">
+	<div style="display: inline-block;" align="center">
+	
+		<h3 style="font-weight: bold; font-size: 20px;">회원정보 페이지</h3><br><br>
+		
+		${sessionScope.member_id }
+		(${sessionScope.member_name }) 님의 mypage
+		
+		<br></br><br></br>
+		<a href="member_modify.member">회원수정</a><br></br><br></br>
+		
+		<a href="member_logout.member">로그아웃</a><br></br><br></br>		
+				
+		<a href="member_delete.member">회원탈퇴</a><br></br><br></br>
+		
+	</div>
+
+</section>
+
+<%@ include file="../include/footer.jsp" %>  

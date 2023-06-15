@@ -1,0 +1,22 @@
+<%@page import="com.sky.member.model.MemberDAO"%>
+<%@page import="com.sky.member.model.MemberVO"%>
+<%@ page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>skyblue in your eyes</title>
+</head>
+
+ 	<br><br>
+        <b><font size="4" color="gray">회원정보가 삭제되었습니다.</font></b>
+        <br><br><br>
+    
+        <input type="button" value="확인" onclick="javascript:window.location='main.jsp'">
+ 
+
+</body>
+</html>

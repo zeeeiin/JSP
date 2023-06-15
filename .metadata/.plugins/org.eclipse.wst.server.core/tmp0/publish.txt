@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Wed Jun 14 17:06:13 KST 2023
+org.eclipse.jst.jee.server\:ProjectSky=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\ProjectSky
+org.eclipse.jst.jee.server\:Project3=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\Project3
+org.eclipse.jst.jee.server\:JSPBasic=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\JSPBasic
+org.eclipse.jst.jee.server\:FanPage=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\FanPage
+org.eclipse.jst.jee.server\:JSPWeb=C\:\\Users\\user\\Desktop\\course\\jsp\\apache-tomcat-9.0.75\\wtpwebapps\\JSPWeb

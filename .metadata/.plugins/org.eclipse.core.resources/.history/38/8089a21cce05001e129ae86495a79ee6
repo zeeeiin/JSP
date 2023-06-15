@@ -1,0 +1,14 @@
+package com.coding404.user.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public interface UserService {
+
+	//추상메서드 선언 - 반환과 매개변수를 내가 결정.
+	//매개변수 통일 시키기 req,res를 통째로 받을 수 있게!
+	
+	int join(HttpServletRequest request, HttpServletResponse ersponse);
+	UserVO login(HttpServletRequest request, HttpServletResponse ersponse);
+	
+}

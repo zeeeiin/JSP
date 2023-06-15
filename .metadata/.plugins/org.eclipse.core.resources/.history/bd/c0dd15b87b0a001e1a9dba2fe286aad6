@@ -1,0 +1,168 @@
+<%@page import="com.sky.member.model.MemberDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+String header = request.getHeader("content-type");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>skyblue in your eyes</title>
+</head>
+<style>
+
+/* btn -3 */
+
+.btn-3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.btn-3 frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+.btn-3 {
+  margin: 20px;
+  outline: none;
+}
+..btn-3 {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+
+.btn-3 {
+  line-height: 39px;
+  padding: 0;
+}
+.btn-3:hover{
+  background: transparent;
+  color: #000;
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+
+
+/* btn -2 */
+
+
+
+
+
+</style>
+
+<body>
+
+	<div style="text-align: center">
+	<br><br>
+	<h3> 아이디 중복 확인 결과 </h3><br>
+	
+<%
+	//사용가능한 아이디일 경우, 아이디 입력 폼에 넣기
+	    String id=request.getParameter("id");
+	    MemberDAO dao = MemberDAO.getInstance();    
+	    int cnt = dao.idCheck(id);
+	    
+	    out.println("입력 ID : <strong>" + id + "</stong>");
+	    
+	    if (id.trim().isEmpty()) {
+	        out.println("<p style='color: red'>아이디를 입력해주세요.</p><br>");
+	    } else if (cnt == 0) {
+	    	out.println("<p>사용 가능한 아이디입니다.</p><br><br>");
+			//out.println("<a href='javascript:apply(\"" + id + "\")'>[적용]</a>");		
+	    }else{
+	    	out.println("<p style='color: red'>해당 아이디는 사용하실 수 없습니다.</p>");
+	    } //if end
+	%>
+
+	<br>
+	<a href="javascript:history.back()" class="btn-3">다시 검색</a>
+	<a href="javascript:window.close()" class="btn-2">창 닫기</a>
+	
+	
+	<!-- <a href="javascript:history.back()">[다시 검색]</a>
+	&nbsp;&nbsp; -->
+	<!--  <a href="javascript:window.close()">[창 닫기]</a>-->
+
+	<script>
+    function apply(id){
+        //중복확인 id를 opener에 적용        
+       // opener.document.regForm.id.value=id;
+        window.close(); //창닫기
+    } //apply () end
+    
+    </script>
+
+
+</div>
+
+    
+    		
+</body>
+</html>

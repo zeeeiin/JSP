@@ -1,0 +1,25 @@
+package com.coding404.util;
+
+public class UserAuthFilter {
+	
+	
+	
+	
+	
+	//세션을 얻음
+	
+	//회원이 로그인 할 때 저장한 인증값
+	
+	
+	//로그인이 안 됨
+	
+	
+	
+	
+	
+	
+	out.println("<script>");
+	out.println("alert('로그인이 필요한 서비스입니다');");
+	out.println("location.href='" + path + ""';");
+	out.println("</script>");
+}

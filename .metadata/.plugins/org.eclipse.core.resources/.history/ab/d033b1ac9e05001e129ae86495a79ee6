@@ -1,0 +1,36 @@
+package com.coding404.user.model;
+
+import java.sql.Timestamp;
+
+public class UserVO {
+
+	//자바빈과 동일하다()
+	//데이터베이스의 값을 처리하기 위한 클래스
+	//컬럼명과 변수명을 동일하게 맞춘다.
+	
+	private String id;
+	private String pw;
+	private String name;
+	private String email;
+	private String gender;
+	private Timestamp regdate; //시분초까지 자세히 보려면 타임스탬프나 date
+	
+	//생성자는 2개
+	public UserVO() {}
+
+	public UserVO(String id, String pw, String name, String email, String gender, Timestamp regdate) {
+		super();
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.email = email;
+		this.gender = gender;
+		this.regdate = regdate;
+	}
+	
+	
+	//getter / setter
+	
+	
+	
+}

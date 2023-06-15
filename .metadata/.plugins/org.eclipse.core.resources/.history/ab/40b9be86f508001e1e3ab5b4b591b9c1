@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>skyblue in your eyes</title>
+</head>
+<body>
+<h1>WebContent/Study/jsp4/main.jsp</h1>
+<%
+request.setCharacterEncoding("utf-8");
+String id = (String)session.getAttribute("id"); //세션저장값들고오기
+//session.getAttribute은 String이 아니라 Object기 때문에 형변환을 해줘야한다.
+if(id == null){
+	response.sendRedirect("loginForm.jsp");
+}
+%>
+<%=id%> 님이 로그인 하셨습니다.<br>
+<input type="button" value="로그아웃" onclick="location.href='logout.jsp'">
+</body>
+</html>
